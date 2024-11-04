@@ -80,7 +80,7 @@ class TuyaController(AbstractController):
         """Send a command."""
         service_data = {
             ATTR_ENTITY_ID: self._controller_data,
-            'command':  command,
+            'command': f"1{command}",
             'delay_secs': self._delay,
         }
 
